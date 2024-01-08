@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <bean name="shop" class="com.jeeva.spring.setterInjection.Map.Shop" p:name="MyShop">
+        <property name="items">
+            <map>
+                <entry key="101" value="Apple"/>
+                <entry key="102">
+                    <value>Samsung</value>
+                </entry>
+                <entry key="103">
+                    <value>Realme</value>
+                </entry>
+                <entry value="Mack book">
+                    <key>
+                        <value>104</value>
+                    </key>
+                </entry>
+                <entry>
+                    <key>
+                        <value>105</value>
+                    </key>
+                    <value>book</value>
+                </entry>
+            </map>
+        </property>
+
+    </bean>
+</beans>
+
